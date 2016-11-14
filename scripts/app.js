@@ -1,21 +1,24 @@
 $(document).ready(function() {	
-	$(".email-0").hide();
-	$(".email-1").hide();
-	$(".email-2").hide();
-
+	
 	var container = $(".container-0");
 	container.click(function(){
-		$(".email-0").fadeToggle("1");
+		$(".email-0").fadeToggle();
+		$(".container-0").toggleClass("closed");
+		$(".container-0").toggleClass("open");
 	});
 	
-		var container = $(".container-1");
+	var container = $(".container-1");
 	container.click(function(){
-		$(".email-1").fadeToggle("1");
+		$(".email-1").fadeToggle();
+		$(".container-1").toggleClass("closed");
+		$(".container-1").toggleClass("open");
 	});
 	
-		var container = $(".container-2");
+	var container = $(".container-2");
 	container.click(function(){
-		$(".email-2").fadeToggle("1");
+		$(".email-2").fadeToggle();
+		$(".container-2").toggleClass("closed");
+		$(".container-2").toggleClass("open");
 	});
 });
 
