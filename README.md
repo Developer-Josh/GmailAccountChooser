@@ -3,5 +3,12 @@
 
 ![switcheropenv1 1](https://cloud.githubusercontent.com/assets/23381860/20314325/e1beec80-ab27-11e6-9c87-7d2d706b0a10.png)
 
+Keyboard Shortcuts 
+Shift + O : Open all three tabs
+Shift + 0 : Open Tab 0
+Shift + 2 :Open Tab 1
+Shift + 2 :Open Tab 2 
+
+
 
 
