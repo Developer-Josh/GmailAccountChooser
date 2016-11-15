@@ -7,7 +7,18 @@ $(document).ready(function() {
 	var $email1 = $(".email-1");
 	var $email2 = $(".email-2");
 
-	//Begin Keyboard Shortcut Functions
+	//Function for opening containers
+	function toggleAction ($email, $container) {
+		try {
+			$email.fadeToggle();
+			$container.toggleClass("closed");
+			$container.toggleClass("open");
+		} catch(e) {
+			console.log('fix the following: ' + e.message);
+		}
+	};
+	
+	//Begin keyboard shortcuts
 	//Shift + o expand all tab containers
 	Mousetrap.bind('shift+o', function() {
 		toggleAction($email0, $container0)
@@ -30,15 +41,9 @@ $(document).ready(function() {
 	Mousetrap.bind('shift+2', function() {
 		toggleAction($email2, $container2)
 	});
-	//End Keyboard Shorcut Functions
+	//End keyboard shortcuts
 	
-	//Click function for opening containers
-	function toggleAction ($email, $container) {
-		$email.fadeToggle();
-		$container.toggleClass("closed");
-		$container.toggleClass("open");
-	};
-
+	//Begin click events
 	$container0.click(function() {
 		toggleAction($email0, $container0)
 	});
@@ -50,4 +55,5 @@ $(document).ready(function() {
 	$container2.click(function() {
 		toggleAction($email2, $container2)
 	});
+	//End click events
 });
